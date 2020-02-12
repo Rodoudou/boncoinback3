@@ -15,7 +15,7 @@ mongoose.connect("mongodb://localhost/leboncoin-api", {
 app.get("/", function(req, res) {
   res.send("Welcome to the leboncoin API.");
 });
-// coucou
+
 const userRoutes = require("./routes/user.js");
 const offerRoutes = require("./routes/offer.js");
 app.use(userRoutes);
